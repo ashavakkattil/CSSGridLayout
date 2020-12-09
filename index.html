@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grids</title>
+    <style>
+        .container div {
+            padding: 10px;
+            background: #888888;
+        }
+
+        .container div:nth-child(odd) {
+            background: #eeeeee;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            grid-gap: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore facilis cupiditate voluptatibus a provident
+            ab obcaecati inventore mollitia, officia amet tenetur distinctio modi labore ex cumque tempora sequi libero
+            blanditiis reiciendis doloremque maiores sunt laborum earum. Corrupti vel sit excepturi magnam hic a magni
+            eum libero iste, molestias natus doloremque aspernatur explicabo officiis eaque voluptates. Obcaecati itaque
+            atque eum accusantium, quas voluptatum, amet, laboriosam a quibusdam repellendus consequatur facere dolores!
+            Consectetur tempora laborum odit magnam magni maxime aut iure ratione.
+        </div>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt eos sunt voluptate exercitationem
+            quibusdam quam. In, temporibus, dolore eius obcaecati quo, quis ab ea nemo nihil hic culpa debitis
+            laboriosam!</div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore facilis cupiditate voluptatibus a provident
+            ab obcaecati inventore mollitia, officia amet tenetur distinctio modi labore ex cumque tempora sequi libero
+            blanditiis reiciendis doloremque maiores sunt laborum earum. Corrupti vel sit excepturi magnam hic a magni
+            eum libero iste, molestias natus doloremque aspernatur explicabo officiis eaque voluptates. Obcaecati itaque
+            atque eum accusantium, quas voluptatum, amet, laboriosam a quibusdam repellendus consequatur facere dolores!
+            Consectetur tempora laborum odit magnam magni maxime aut iure ratione.
+        </div>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt eos sunt voluptate exercitationem
+            quibusdam quam. In, temporibus, dolore eius obcaecati quo, quis ab ea nemo nihil hic culpa debitis
+            laboriosam!</div>
+    </div>
+</body>
+
+</html>
