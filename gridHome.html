@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid | Home</title>
+    <style>
+        .container {
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1em;
+            /* Fixed height for all grids 
+            grid-auto-rows: 100px;*/
+            grid-auto-rows: minmax(100px, auto);
+        }
+
+        .container div {
+            padding: 10px;
+            background: #eeeeee;
+        }
+
+        .container div:nth-child(odd) {
+            background: #888888;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error reprehenderit quisquam facilis omnis, amet
+            veritatis dicta eum, rem enim unde beatae eos quidem fuga? Odit ex, deleniti alias consequuntur corporis
+            possimus iste at est excepturi vitae qui impedit! Deleniti optio nesciunt cum necessitatibus nostrum dolor.
+            Maxime nulla doloribus dignissimos! Quas saepe unde modi mollitia sed accusantium? Eligendi praesentium
+            explicabo quia? Molestiae reprehenderit sapiente omnis officia distinctio, neque consequuntur ex, nostrum,
+            perspiciatis labore aliquid at temporibus debitis nesciunt! Labore, architecto iusto?</div>
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit.</div>
+    </div>
+</body>
+
+</html>
